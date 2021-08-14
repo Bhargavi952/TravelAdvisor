@@ -14,6 +14,58 @@ const PlaceDetails = ({place}) => {
            title={place.name} />
            <CardContent>
                <Typography gutterBottom variant='h5'>{place.name}</Typography>
+               <Box display="flex" justifyContent="space-between">
+               <Rating size='small' value={Number(place.rating)} readOnly />
+               <Typography gutterBottom variant='subtitle1'>Out of {place.num_reviews} reviews</Typography>
+
+               </Box>
+               <Box display="flex" justifyContent="space-between">
+               <Typography variant='subtitle1'>Price</Typography>
+               <Typography gutterBottom variant='subtitle1'>{place.price_level}</Typography>
+
+               </Box>
+               <Box display="flex" justifyContent="space-between">
+               <Typography variant='subtitle1'>Ranking</Typography>
+               <Typography gutterBottom variant='subtitle1'>{place.ranking}</Typography>
+               </Box>
+               {
+                place?.awards?.map((award)=>{
+                    return(
+                        <>
+                        <Box my={1} display="flex" justifyContent="space-between" alignItems="center">
+                            <img src={award.images.small} alt={award.display_name}/>
+               <Typography color="textSecondary" variant='subtitle2'>{award.display_name}</Typography>
+
+                        </Box>
+                        </>
+                    )
+                })
+               }
+               {
+                   place?.cuisine?.map(({name})=>{
+                  return  <Chip key={name} size='small' label={name} className={classes.chip}  />
+                   })
+               }
+               {
+                   place?.address &&(
+                       <Typography gutterBottom variant="subtitle2" color="textSecondary" className={classes.subtitle} >
+                        <LocationOnIcon/> {place.address}
+                       </Typography>
+                   )
+               }
+                {
+                   place?.phone &&(
+                       <Typography gutterBottom variant="subtitle2" color="textSecondary" className={classes.spacing} >
+                        <PhoneIcon/> {place.phone}
+                       </Typography>
+                   )
+               }
+               <CardActions>
+                   <Button size="small" color="primary" onClick={()=>window.open(place.web_url,"_blank")}>Trip Advisor</Button>
+                   <Button size="small" color="primary" onClick={()=>window.open(place.website,"_blank")}>Website</Button>
+
+               </CardActions>
+
            </CardContent>
            
        </Card>
