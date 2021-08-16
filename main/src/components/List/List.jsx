@@ -17,7 +17,7 @@ const List = ({places,childClicked , isLoading,type,setType,rating ,setRating}) 
         <>
         <div  className={classes.container}>
             <Typography variant='h4'> 
-                Restaurants , Hotels and Attractions around you
+                Restaurants,<br></br> Hotels <br></br> & Attractions around you
             </Typography>
             {isLoading ?(
                 <div className={classes.loading} >
@@ -27,9 +27,9 @@ const List = ({places,childClicked , isLoading,type,setType,rating ,setRating}) 
             <FormControl className={classes.formControl} >
                 <InputLabel>Type</InputLabel>
             <Select value={type} onChange={(e)=>setType(e.target.value)} >
-            <MenuItem value="restaurants">Restaurants</MenuItem>
-            <MenuItem value="hotels">Hotels</MenuItem>
-            <MenuItem value="attractions">Attractions</MenuItem>
+            <MenuItem className={classes.menu} value="restaurants">Restaurants</MenuItem>
+            <MenuItem className={classes.menu}  value="hotels">Hotels</MenuItem>
+            <MenuItem className={classes.menu}  value="attractions">Attractions</MenuItem>
 
             </Select>
             </FormControl>

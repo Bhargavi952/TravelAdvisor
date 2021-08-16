@@ -5,6 +5,9 @@ export default makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      // color: "#ba3b11"
+      // color: "#d6380d"
+      color: "#f75e05"
     },
   },
   search: {
@@ -18,7 +21,7 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(3), width: 'auto' },
   },
   searchIcon: {
-    padding: theme.spacing(0, 2), height: '100%', position: 'absolute', pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center',
+    padding: theme.spacing(0, 2) ,height: '100%', position: 'absolute', pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center',
   },
   inputRoot: {
     color: 'inherit',
@@ -28,5 +31,8 @@ export default makeStyles((theme) => ({
   },
   toolbar: {
     display: 'flex', justifyContent: 'space-between',
+    // background: "#211c1b"
+    background: "#121111"
+    
   },
 }));

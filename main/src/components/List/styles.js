@@ -12,6 +12,7 @@ export default makeStyles((theme) => ({
   },
   container: {
     padding: '25px',
+    color: "#000"
   },
   marginBottom: {
     marginBottom: '30px',
@@ -19,4 +20,7 @@ export default makeStyles((theme) => ({
   list: {
     height: '75vh', overflow: 'auto',
   },
+  menu:{
+    color: "#000"
+  }
 }));

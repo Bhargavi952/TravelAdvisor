@@ -41,6 +41,7 @@ const Map = ({setCoordinates ,setBounds,coordinates,places ,setChildClicked , we
                                             {place.name}
                                         </Typography>
                                         <img 
+                                        
                                            className={classes.pointer}
                                            alt={place.name}
                                            src={place.photo ? place.photo.images.large.url:'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'} 

@@ -16,7 +16,7 @@ const App = ()=>{
 
     const [isLoading, setIsLoading] = useState(false)
     const [type , setType] = useState('restaurants')
-    const [rating , setRating] = useState('')
+    const [rating , setRating] = useState(0)
 
 
 useEffect(()=>{
@@ -47,7 +47,8 @@ useEffect(()=>{
         <>
         <CssBaseline/>
         <Header setCoordinates={setCoordinates}/>
-        <Grid container spacing={3} style={{width:"100%"}} >
+
+        <Grid container spacing={3} style={{width:"100%",background:"#fff"}} >
             <Grid item xs={12} md={4}>
                 <List places={ filteredPlaces.length ? filteredPlaces : places} 
                 childClicked={childClicked}
