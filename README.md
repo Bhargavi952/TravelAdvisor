@@ -1,6 +1,6 @@
 ## Travel Advisor
 
-Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs,
+Build and Deploy Travel Advisor App using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs,
 
 ## Npm Packages used
 > ### react ![React](https://img.shields.io/npm/v/react.svg)
