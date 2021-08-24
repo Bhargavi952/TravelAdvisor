@@ -2,6 +2,31 @@
 
 Build and Deploy Travel Advisor App using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs,
 
+### Run Locally
+
+Clone the project
+
+```bash
+ https://github.com/Bhargavi952/TravelAdvisor.git
+```
+
+Go to the project directory
+```bash
+  cd main
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
 ## Npm Packages used
 > ### react ![React](https://img.shields.io/npm/v/react.svg)
 > ### testing-library/react ![@testing-library/react](https://img.shields.io/npm/v/@testing-library/react.svg)
